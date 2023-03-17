@@ -22,3 +22,4 @@ elif b != 0:
     print(f'x = {-c/b}')
 else:
     print('x - Любое число')
+    
