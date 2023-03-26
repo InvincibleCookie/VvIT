@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="" method="post">
+      <p>
+    <label for="name">Your name:</label>
+    <input type="text" name="name" value={{insert_name}}>
+     </p>
+        <p>
+	    <label for="login">Login:</label>
+	    <input type="text" name="login" value={{insert_login}}>
+	     </p>
+	<p>
+	    <label for="password">Password:</label>
+	    <input type="password" name="password" value={{insert_password}}>
+	</p>
+	<p>
+	    <input type="submit" value="Sign In">
+		{% if smth_empty == True %}
+        <p>Обязательно заполните все поля</p>
+        {% endif %}
+
+        {% if alrd_use == True %}
+        <p>Пользователь с таким логином уже есть</p>
+        {% endif %}
+	</p>
+    </form>
+
+</body>
+</html>
